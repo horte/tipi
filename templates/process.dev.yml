@@ -1,0 +1,11 @@
+apps:
+  - script: src/index.js
+    source_map_support: true
+    watch:
+      - src
+    ignore_watch: 
+      - node_modules
+    watch_options:
+      usePolling: true
+    interpreter: babel-node
+    interpreter_args: --debug

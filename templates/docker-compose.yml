@@ -1,0 +1,19 @@
+<%= appNameSlug %>-server:
+  build: ./.
+  ports:
+  - '4000:4000'
+  - '40001:8080'
+  restart: on-failure
+  environment:
+    # Add environment variables here
+    # Syntax like this
+    # VARIABLE_NAME_IN_APP: $VARIABLE_NAME_ON_VAULT
+    SERVER_HOST: 0.0.0.0
+    SERVER_PORT: 4000
+    NODE_ENV: development
+  volumes:
+  - ./src:/home/node/app/src
+  log_driver: 'json-file'
+  log_opt:
+    max-size: '50m'
+    max-file: 2

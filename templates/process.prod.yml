@@ -1,0 +1,4 @@
+apps:
+  - script: lib/index.js
+    name: <%= appName %>
+    exec_mode: cluster

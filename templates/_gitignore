@@ -1,0 +1,10 @@
+.*
+!.gitignore
+!.babelrc
+!.dockerignore
+!.editorconfig
+!.eslintignore
+!.eslintrc.js
+!.gitlab-ci.yml
+lib
+node_modules
